@@ -9,7 +9,8 @@ function bootstrap() {
 }
 
 if (!uploadPath || !uploadUUID) {
-    return bootstrap();
+    console.error('Missing path or uuid');
+    process.exit(1);
 }
 var extractor = require('./lib/extract');
 extractor(uploadPath, uploadUUID)
