@@ -1,0 +1,19 @@
+{
+  "name": "mrtesting",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bulk-require": "~0.2.1",
+    "lodash": "~3.8.0",
+    "mapred": "~0.1.0",
+    "q": "~1.4.0",
+    "split": "~0.3.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Connor Hindley <conn.hindley@gmail.com> (http://connorhindley.com/)",
+  "license": "MIT"
+}
