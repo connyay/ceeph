@@ -1,0 +1,188 @@
+{
+    "dmesg": [
+        "sos_commands/general/dmesg",
+        "insights_commands/dmesg"
+    ],
+    "messages": "var/log/messages",
+    "bond": "proc/net/bonding/bond.*",
+    "cciss": "proc/driver/cciss/cciss.*",
+    "cib.xml": "sos_commands/cluster/crm_report/[^/]*/cib.xml",
+    "ethtool": [
+        "sos_commands/networking/ethtool_[^-].*",
+        "insights_commands/ethtool_[^-].*"
+    ],
+    "ethtool-S": [
+        "sos_commands/networking/ethtool_-S.*",
+        "insights_commands/ethtool_-S.*"
+    ],
+    "ethtool-a": [
+        "sos_commands/networking/ethtool_-a.*",
+        "insights_commands/ethtool_-a.*"
+    ],
+    "ethtool-c": [
+        "sos_commands/networking/ethtool_-c.*",
+        "insights_commands/ethtool_-c.*"
+    ],
+    "ethtool-g": [
+        "sos_commands/networking/ethtool_-g.*",
+        "insights_commands/ethtool_-g.*"
+    ],
+    "ethtool-i": [
+        "sos_commands/networking/ethtool_-i.*",
+        "insights_commands/ethtool_-i.*"
+    ],
+    "ethtool-k": [
+        "sos_commands/networking/ethtool_-k.*",
+        "insights_commands/ethtool_-k.*"
+    ],
+    "ifcfg": "etc/sysconfig/network-scripts/ifcfg-.*",
+    "modinfo": [
+        "sos_commands/kernel/modinfo.*",
+        "insights_commands/modinfo.*"
+    ],
+    "parted-s": [
+        "sos_commands/filesys/parted_-s.*",
+        "insights_commands/parted_-s.*"
+    ],
+    "90-nproc.conf": "etc/security/limits.d/90-nproc.conf",
+    "blkid": [
+        "sos_commands/filesys/blkid_-c_.dev.null",
+        "insights_commands/blkid_-c_.dev.null"
+    ],
+    "chkconfig": [
+        "chkconfig",
+        "insights_commands/chkconfig_--list"
+    ],
+    "cinder.conf": "/etc/cinder/cinder.conf",
+    "cluster.conf": "etc/cluster/cluster.conf",
+    "cmdline": "proc/cmdline",
+    "cpuinfo": "proc/cpuinfo",
+    "current_clocksource": "sys/devices/system/clocksource/clocksource0/current_clocksource",
+    "date": [
+        "date",
+        "insights_commands/date"
+    ],
+    "dirsrv": "etc/sysconfig/dirsrv",
+    "dmidecode": [
+        "dmidecode",
+        "insights_commands/dmidecode"
+    ],
+    "fdisk-l": "sos_commands/cluster/fdisk_-l",
+    "free": [
+        "free",
+        "insights_commands/free"
+    ],
+    "fstab": "etc/fstab",
+    "glance-api.conf": "etc/glance/glance-api.conf",
+    "glance-cache.conf": "etc/glance/glance-cache.conf",
+    "glance-registry.conf": "etc/glance/glance-registry.conf",
+    "grub.conf": "boot/grub/grub.conf",
+    "grub2.cfg": "boot/grub2/grub.cfg",
+    "heat.conf": "etc/heat/heat.conf",
+    "hostname": [
+        "hostname",
+        "insights_commands/hostname"
+    ],
+    "hosts": "etc/hosts",
+    "httpd.conf": "etc/httpd/conf/httpd.conf",
+    "ifconfig": [
+        "ifconfig",
+        "insights_commands/ifconfig_-a"
+    ],
+    "installed-rpms": [
+        "installed-rpms",
+        "insights_commands/rpm_-qa_--qf_NAME_-_VERSION_-_RELEASE_._ARCH_INSTALLTIME_date"
+    ],
+    "interrupts": "proc/interrupts",
+    "ip_route_show_table_all": [
+        "sos_commands/networking/ip_route_show_table_all",
+        "insights_commands/ip_route_show_table_all"
+    ],
+    "java": [
+        "java",
+        "insights_commands/java"
+    ],
+    "kdump": "etc/sysconfig/kdump",
+    "kdump.conf": "etc/kdump.conf",
+    "kexec_crash_loaded": "sys/kernel/kexec_crash_loaded",
+    "limits.conf": "etc/security/limits.conf",
+    "locale": [
+        "sos_commands/i18n/locale",
+        "insights_commands/locale"
+    ],
+    "ls_boot": [
+        "sos_commands/bootloader/ls_-laR_.boot",
+        "sos_commands/boot/ls_-lanR_.boot"
+    ],
+    "lsmod": [
+        "lsmod",
+        "insights_commands/lsmod"
+    ],
+    "lspci": [
+        "sos_commands/hardware/lspci",
+        "insights_commands/lspci"
+    ],
+    "lvm.conf": "etc/lvm/lvm.conf",
+    "meminfo": "proc/meminfo",
+    "mount": [
+        "mount",
+        "insights_commands/mount"
+    ],
+    "netconsole": "etc/sysconfig/netconsole",
+    "netstat": [
+        "netstat",
+        "insights_commands/netstat_-neopa"
+    ],
+    "netstat-s": [
+        "sos_commands/networking/netstat_-s",
+        "insights_commands/netstat_-s"
+    ],
+    "neutron.conf": "etc/neutron/neutron.conf",
+    "nova.conf": "etc/nova/nova.conf",
+    "nscd.conf": "etc/nscd.conf",
+    "nss.conf": "etc/httpd/conf.d/nss.conf",
+    "ovs-vsctl_show": [
+        "ovs-vsctl_show",
+        "insights_commands/ovs-vsctl_show"
+    ],
+    "password-auth": "etc/pam.d/password-auth",
+    "ps_auxwww": [
+        "sos_commands/process/ps_auxwww",
+        "insights_commands/ps_auxwww"
+    ],
+    "rc.local": "etc/rc.d/rc.local",
+    "redhat-release": "etc/redhat-release",
+    "rhn.conf": "etc/rhn/rhn.conf",
+    "rsyslog.conf": "etc/rsyslog.conf",
+    "samba": "etc/samba/smb.conf",
+    "scsi": "proc/scsi/scsi",
+    "selinux-config": "etc/selinux/config",
+    "sshd_config": "etc/ssh/sshd_config",
+    "ssl.conf": "etc/httpd/conf.d/ssl.conf",
+    "sysctl": [
+        "sos_commands/kernel/sysctl_-a",
+        "insights_commands/sysctl_-a"
+    ],
+    "sysctl.conf": "etc/sysctl.conf",
+    "systemctl_list-unit-files": [
+        "sos_commands/systemd/systemctl_list-unit-files",
+        "insights_commands/systemctl_list-unit-files"
+    ],
+    "uname": [
+        "uname",
+        "insights_commands/uname_-a"
+    ],
+    "up2date": "etc/sysconfig/rhn/up2date",
+    "uptime": [
+        "uptime",
+        "insights_commands/uptime"
+    ],
+    "udev-persistent-net.rules": "etc/udev/rules.d/70-persistent-net.rules",
+    "vgdisplay": [
+        "vgdisplay",
+        "insights_commands/vgdisplay"
+    ],
+    "vsftpd": "etc/pam.d/vsftpd",
+    "vsftpd.conf": "etc/vsftpd/vsftpd.conf",
+    "yum.log": "var/log/yum.log"
+}
