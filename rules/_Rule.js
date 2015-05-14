@@ -1,5 +1,6 @@
 'use strict';
 var utils = require('../utils');
+var files = require('../lib/stat');
 
 function Rule(ERROR_KEY) {
     this.ERROR_KEY = ERROR_KEY;
@@ -14,7 +15,10 @@ Rule.prototype.addMapper = function (args, fn) {
         fn: fn
     };
     if (args.file) {
-        mapper.file = args.file;
+        mapper.file = files[args.file];
+        if (!mapper.file) {
+            return;
+        }
     }
 
     this.mappers.push(mapper);
